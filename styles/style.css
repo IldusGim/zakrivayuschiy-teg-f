@@ -25,7 +25,8 @@
 }
 
 .adaptive-inline-size {
-  inline-size: var(--element-inline-size);
+  max-inline-size: var(--element-inline-size);
+  inline-size: 100%;
 }
 
 .header {
@@ -53,6 +54,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 50px;
   padding-block-start: 94px;
   font-size: 18px;
@@ -173,10 +175,6 @@
   transform-origin: left;
 }
 
-.button:hover {
-  color: #fff;
-}
-
 .button:hover::before {
   transform: scaleX(1);
 }
@@ -189,7 +187,6 @@
 .button__text {
   position: relative;
   color: var(--difference-color);
-  transition: color 0.5s ease-in-out;
   mix-blend-mode: difference;
 }
 
@@ -219,10 +216,6 @@
 
 .filter-heat {
   filter: hue-rotate(330deg) saturate(1.8) contrast(1.2);
-}
-
-footer {
-  padding-block-start: 50px;
 }
 
 .save-button {

@@ -2,7 +2,7 @@
 
 :root {
   --font-main: "Inter-Variable", sans-serif;
-  --font-accent: "PressStart2P", monospace;
+  --font-accent: "PressStart2P", fantasy;
   --font-weight-main: 410;
   --font-weight-title: 715;
   --background-image-main:
@@ -17,7 +17,7 @@
       rgb(211 211 211 / 0) 2px 4px
     ),
     linear-gradient(to bottom, #e7e7e7, #e7e7e7 0.01%, #1a1a1a 100%);
-  --element-inline-size: clamp(375px, 100vw, 700px);
+  --element-inline-size: clamp(375px, calc(227.273px + 39.394vw), 700px);
   --element-background-color: #fff;
   --label-stroke-color: #fff;
   --animation-fill-color: #ff0000;
